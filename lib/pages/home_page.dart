@@ -3,14 +3,18 @@ import '../Widgets/listview_box.dart';
 import '../Widgets/snackbar.dart';
 import '../Widgets/show_dialog.dart';
 import '../Widgets/dropdown.dart';
+import '../Widgets/bottom_sheet.dart';
+import '../Widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomeWidget(),
+    return MaterialApp(
+      theme: ThemeData(fontFamily: "Oxygen"),
+      debugShowCheckedModeBanner: false,
+      home: const HomeWidget(),
     );
   }
 }
@@ -29,11 +33,12 @@ class _HomeWidgetState extends State<HomeWidget> {
       appBar: AppBar(
         leading: Padding(
           padding: const EdgeInsets.all(7.0),
-          child: Image.asset("asset/images/-MOTOR-.png"),
+          child: Image.asset("assets/images/-MOTOR-.png"),
         ),
         title: const Text("UI Basic"),
         backgroundColor: Colors.green[600],
       ),
+      endDrawer: const ShowDrawer(),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -43,10 +48,10 @@ class _HomeWidgetState extends State<HomeWidget> {
                     padding: EdgeInsets.only(left: 30, top: 20),
                     child: ShowDropdown())),
             Container(
-              height: 140,
-              margin: const EdgeInsets.only(left: 20, top: 20),
+              height: 120,
+              margin: const EdgeInsets.only(top: 20),
               child: ListView.builder(
-                itemCount: 25,
+                itemCount: 20,
                 itemBuilder: (context, index) =>
                     ListviewBox(text: "Box ${index + 1}"),
                 scrollDirection: Axis.horizontal,
@@ -60,6 +65,10 @@ class _HomeWidgetState extends State<HomeWidget> {
               height: 30,
             ),
             const ShowSnackbar(),
+            const SizedBox(
+              height: 30,
+            ),
+            const BottomSheets()
           ],
         ),
       ),

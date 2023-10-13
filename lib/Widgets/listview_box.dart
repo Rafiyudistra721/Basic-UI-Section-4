@@ -18,11 +18,11 @@ class _ListviewBoxState extends State<ListviewBox> {
     return Container(
       width: 100,
       height: 100,
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
+          border: Border.all(width: 1),
           borderRadius: BorderRadius.all(Radius.circular(20)),
           color: Colors.black12),
       child: Center(child: Text(widget.text)),
     );
-    
   }
 }

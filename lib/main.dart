@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
-import 'pages/login_page.dart';
+import 'navigation/bottom_navigation_bar.dart';
 
 void main() {
   runApp(const UiBasicApp());
@@ -20,7 +19,9 @@ class _UiBasicAppState extends State<UiBasicApp> {
       title: "UI Basic",
       theme: ThemeData(fontFamily: "Oxygen"),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const Scaffold(
+        body: BottomNavbar(),
+      ),
     );
   }
 }

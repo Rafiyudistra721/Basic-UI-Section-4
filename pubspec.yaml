@@ -37,8 +37,14 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
+  flutter_launcher_icons: "^0.13.1"
   flutter_test:
     sdk: flutter
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -60,7 +66,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - asset/images/-MOTOR-.png
+    - assets/images/-MOTOR-.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
@@ -75,10 +81,10 @@ flutter:
   fonts:
     - family: Oxygen
       fonts:
-        - asset: asset/fonts/Oxygen-Regular.ttf
-        - asset: asset/fonts/Oxygen-Light.ttf
+        - asset: assets/fonts/Oxygen-Regular.ttf
+        - asset: assets/fonts/Oxygen-Light.ttf
           weight: 300
-        - asset: asset/fonts/Oxygen-Bold.ttf
+        - asset: assets/fonts/Oxygen-Bold.ttf
           weight: 700
   #   - family: Trajan Pro
   #     fonts:

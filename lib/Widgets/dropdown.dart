@@ -11,15 +11,15 @@ class ShowDropdown extends StatefulWidget {
 
 class _ShowDropdownState extends State<ShowDropdown> {
   final List data = [
-    {"Judul":"Menu 1", "Data":1},
-    {"Judul":"Menu 2", "Data":2},
-    {"Judul":"Menu 3", "Data":3},
-    {"Judul":"Menu 4", "Data":4}
+    {"Judul": "Menu 1", "Data": 1},
+    {"Judul": "Menu 2", "Data": 2},
+    {"Judul": "Menu 3", "Data": 3},
+    {"Judul": "Menu 4", "Data": 4}
   ];
 
-late int menuawal;
+  late int menuawal;
 
-@override
+  @override
   void initState() {
     menuawal = data[1]["Data"];
     super.initState();

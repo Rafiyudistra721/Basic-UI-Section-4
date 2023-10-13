@@ -40,7 +40,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                   decoration: BoxDecoration(
                       color: Colors.black38,
                       borderRadius: BorderRadius.circular(20)),
-                  child: Image.asset('asset/images/-MOTOR-.png')),
+                  child: Image.asset('assets/images/-MOTOR-.png')),
             ),
           ),
           Padding(
